@@ -1,0 +1,372 @@
+/* ================================
+   COLLECTIONS PAGE
+================================ */
+
+.collections-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 34px 45px;
+  box-sizing: border-box;
+  background: #0d0b1a;
+  color: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.collections-page * {
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.collections-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.collections-search {
+  width: 380px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 18px;
+  border-radius: 13px;
+  background: #1a1730;
+  color: #aaa5c4;
+}
+
+.collections-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.collections-search input::placeholder {
+  color: #817c9a;
+}
+
+.collections-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.collections-icon-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2c2843;
+  border-radius: 12px;
+  background: transparent;
+  color: #d8d4ed;
+  cursor: pointer;
+}
+
+.collections-icon-button:hover {
+  background: #211d38;
+}
+
+.collections-profile {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #d7d0e9;
+  color: #241c3a;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================================
+   PAGE HEADING
+================================ */
+
+.collections-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.collections-page-heading h1 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.collections-page-heading p {
+  margin: 0;
+  color: #ddd8ed;
+  font-size: 14px;
+}
+
+.collections-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #77729a;
+  font-size: 14px;
+}
+
+.collections-breadcrumb strong {
+  color: #aaa5c5;
+  font-weight: 500;
+}
+
+/* ================================
+   FILTERS
+================================ */
+
+.collections-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.collections-filters button {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.collections-filters button.active {
+  background: #7046ed;
+}
+
+/* ================================
+   GRID
+================================ */
+
+.collections-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+/* ================================
+   CARD
+================================ */
+
+.collection-card {
+  min-width: 0;
+  padding: 20px;
+  border-radius: 17px;
+  background: #1a1730;
+}
+
+/* ================================
+   IMAGE
+================================ */
+
+.collection-image {
+  width: 100%;
+  height: 188px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #11101d;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.collection-card h2 {
+  margin: 30px 2px 16px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ================================
+   INFO
+================================ */
+
+.collection-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.collection-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.collection-info > div:last-child {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.collection-info span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.collection-info strong {
+  color: #8076aa;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.collection-info small {
+  color: #8076aa;
+  font-size: 14px;
+}
+
+/* ================================
+   PLACE BID
+================================ */
+
+.collection-place-bid {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  background: #7046ed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.collection-place-bid:hover {
+  background: #8058f3;
+}
+
+/* ================================
+   TOAST
+================================ */
+
+.collections-toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 5000;
+  padding: 13px 20px;
+  border-radius: 12px;
+  background: #211d39;
+  border: 1px solid #3a3457;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.collections-page.light-theme {
+  background: #f5f3fb;
+  color: #211d32;
+}
+
+.collections-page.light-theme
+  .collections-search,
+.collections-page.light-theme
+  .collection-card {
+  background: #ffffff;
+}
+
+.collections-page.light-theme
+  .collections-search {
+  border: 1px solid #ded9e9;
+}
+
+.collections-page.light-theme
+  .collections-search input {
+  color: #211d32;
+}
+
+.collections-page.light-theme
+  .collections-page-heading h1,
+.collections-page.light-theme
+  .collection-card h2 {
+  color: #211d32;
+}
+
+.collections-page.light-theme
+  .collection-info span {
+  color: #312c40;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .collections-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .collections-page {
+    padding: 25px 20px 35px;
+  }
+}
+
+@media (max-width: 700px) {
+  .collections-page {
+    padding: 80px 15px 30px;
+  }
+
+  .collections-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .collections-search {
+    width: 100%;
+  }
+
+  .collections-actions {
+    justify-content: flex-end;
+  }
+
+  .collections-page-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .collection-image {
+    height: 250px;
+  }
+}

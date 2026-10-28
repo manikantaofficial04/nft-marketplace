@@ -1,0 +1,510 @@
+/* ================================
+   PROFILE PAGE
+================================ */
+
+.profile-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 34px 50px;
+  box-sizing: border-box;
+  background: #0d0b1a;
+  color: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.profile-page * {
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.profile-search {
+  width: 380px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 18px;
+  border-radius: 13px;
+  background: #1a1730;
+  color: #aaa5c4;
+}
+
+.profile-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.profile-search input::placeholder {
+  color: #817c9a;
+}
+
+.profile-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.profile-icon-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2c2843;
+  border-radius: 12px;
+  background: transparent;
+  color: #d8d4ed;
+  cursor: pointer;
+}
+
+.profile-icon-button:hover {
+  background: #211d38;
+}
+
+.profile-top-avatar {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile-top-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ================================
+   PAGE HEADING
+================================ */
+
+.profile-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profile-page-heading h1 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.profile-page-heading p {
+  margin: 0;
+  color: #ddd8ed;
+  font-size: 14px;
+}
+
+.profile-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #77729a;
+  font-size: 14px;
+}
+
+.profile-breadcrumb strong {
+  color: #aaa5c5;
+  font-weight: 500;
+}
+
+/* ================================
+   TOP SECTION
+================================ */
+
+.profile-top-section {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* ================================
+   VERIFICATION CARD
+================================ */
+
+.profile-verification-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #1a1730;
+}
+
+.profile-verification-avatar {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.profile-verification-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-verification-card h2 {
+  margin: 0 0 7px;
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.profile-verification-card > p {
+  margin: 0;
+  max-width: 320px;
+  color: #f0edf8;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.profile-verification-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #7148ef;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.profile-check-icon,
+.profile-lock-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.profile-check-icon {
+  background: #4ac527;
+}
+
+.profile-lock-icon {
+  background: #7046ed;
+}
+
+.profile-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 14px;
+  background: #403b51;
+}
+
+/* ================================
+   FOLLOWING
+================================ */
+
+.profile-following-section {
+  min-width: 0;
+}
+
+.profile-following-section > h2 {
+  margin: 68px 0 14px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.profile-following-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 30px;
+}
+
+.profile-follow-card {
+  min-height: 83px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 20px;
+  border-radius: 16px;
+  background: #1a1730;
+}
+
+.profile-follow-avatar {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-follow-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-follow-details {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-follow-details strong {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.profile-follow-details span {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.profile-follow-card button {
+  margin-left: auto;
+  padding: 8px 19px;
+  border: none;
+  border-radius: 9px;
+  background: #e9364c;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================================
+   CONTENT SECTIONS
+================================ */
+
+.profile-content-section {
+  margin-bottom: 50px;
+}
+
+.profile-content-section > h2 {
+  margin: 0 0 25px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* ================================
+   NFT GRID
+================================ */
+
+.profile-nft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.profile-nft-card {
+  min-width: 0;
+  padding: 20px;
+  border-radius: 17px;
+  background: #1a1730;
+}
+
+.profile-nft-image {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: visible;
+  border-radius: 15px;
+}
+
+.profile-nft-image > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.profile-nft-avatar {
+  position: absolute;
+  right: 10px;
+  bottom: -8px;
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #ffd42a;
+}
+
+.profile-nft-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-nft-card h3 {
+  margin: 20px 2px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ================================
+   TOAST
+================================ */
+
+.profile-toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 5000;
+  padding: 13px 20px;
+  border-radius: 12px;
+  background: #211d39;
+  border: 1px solid #3a3457;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.profile-page.light-theme {
+  background: #f5f3fb;
+  color: #211d32;
+}
+
+.profile-page.light-theme
+  .profile-search,
+.profile-page.light-theme
+  .profile-verification-card,
+.profile-page.light-theme
+  .profile-follow-card,
+.profile-page.light-theme
+  .profile-nft-card {
+  background: #ffffff;
+}
+
+.profile-page.light-theme
+  .profile-search {
+  border: 1px solid #ded9e9;
+}
+
+.profile-page.light-theme
+  .profile-search input {
+  color: #211d32;
+}
+
+.profile-page.light-theme
+  .profile-page-heading h1,
+.profile-page.light-theme
+  .profile-verification-card h2,
+.profile-page.light-theme
+  .profile-following-section > h2,
+.profile-page.light-theme
+  .profile-content-section > h2,
+.profile-page.light-theme
+  .profile-nft-card h3 {
+  color: #211d32;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .profile-top-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-following-section > h2 {
+    margin-top: 0;
+  }
+
+  .profile-nft-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .profile-page {
+    padding: 25px 20px 35px;
+  }
+
+  .profile-nft-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-following-grid {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .profile-page {
+    padding: 80px 15px 30px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .profile-search {
+    width: 100%;
+  }
+
+  .profile-header-actions {
+    justify-content: flex-end;
+  }
+
+  .profile-page-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .profile-following-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-nft-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-top-section {
+    margin-bottom: 35px;
+  }
+
+  .profile-verification-card {
+    width: 100%;
+  }
+}

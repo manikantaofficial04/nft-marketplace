@@ -1,0 +1,454 @@
+/* ================================
+   SETTINGS PAGE
+================================ */
+
+.settings-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 34px 50px;
+  box-sizing: border-box;
+  background: #0d0b1a;
+  color: #ffffff;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.settings-page * {
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.settings-search {
+  width: 380px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 18px;
+  border-radius: 13px;
+  background: #1a1730;
+  color: #aaa5c4;
+}
+
+.settings-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.settings-search input::placeholder {
+  color: #817c9a;
+}
+
+.settings-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.settings-icon-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2c2843;
+  border-radius: 12px;
+  background: transparent;
+  color: #d8d4ed;
+  cursor: pointer;
+}
+
+.settings-icon-button:hover {
+  background: #211d38;
+}
+
+.settings-profile-button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #d7d0e9;
+  color: #241c3a;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ================================
+   PAGE HEADING
+================================ */
+
+.settings-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.settings-page-heading h1 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.settings-page-heading p {
+  margin: 0;
+  color: #ddd8ed;
+  font-size: 14px;
+}
+
+.settings-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #77729a;
+  font-size: 14px;
+}
+
+.settings-breadcrumb strong {
+  color: #aaa5c5;
+  font-weight: 500;
+}
+
+/* ================================
+   TOP CARDS
+================================ */
+
+.settings-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.settings-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: #1a1730;
+}
+
+.settings-card h2 {
+  margin: 0 0 22px;
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.settings-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aaa5c4;
+  font-size: 13px;
+}
+
+.settings-card input {
+  width: 100%;
+  height: 46px;
+  margin-bottom: 18px;
+  padding: 0 14px;
+  border: 1px solid #302b48;
+  border-radius: 9px;
+  outline: none;
+  background: #131124;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.settings-card input:focus {
+  border-color: #7046ed;
+}
+
+.settings-user-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 5px 0 20px;
+}
+
+.settings-user-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #7046ed;
+  color: #ffffff;
+}
+
+.settings-user-preview div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.settings-user-preview strong {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.settings-user-preview span {
+  color: #85809c;
+  font-size: 12px;
+}
+
+/* ================================
+   SAVE BUTTON
+================================ */
+
+.settings-save-button {
+  height: 40px;
+  min-width: 100px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 9px;
+  background: #7046ed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings-save-button:hover {
+  background: #8058f3;
+}
+
+/* ================================
+   TABS
+================================ */
+
+.settings-tabs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  background: #17142a;
+  overflow-x: auto;
+}
+
+.settings-tabs button {
+  flex: 0 0 auto;
+  height: 42px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #918ca8;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.settings-tabs button:hover {
+  color: #ffffff;
+}
+
+.settings-tabs button.active {
+  background: #7046ed;
+  color: #ffffff;
+}
+
+/* ================================
+   CONTENT
+================================ */
+
+.settings-content {
+  width: 100%;
+}
+
+.settings-content > h2 {
+  margin: 0 0 20px;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.settings-personal-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+  padding: 25px;
+  border-radius: 16px;
+  background: #1a1730;
+}
+
+.settings-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-form-group label {
+  margin-bottom: 8px;
+  color: #aaa5c4;
+  font-size: 13px;
+}
+
+.settings-form-group input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #302b48;
+  border-radius: 9px;
+  outline: none;
+  background: #131124;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.settings-form-group input:focus {
+  border-color: #7046ed;
+}
+
+.settings-personal-card .settings-save-button {
+  grid-column: 1 / -1;
+  justify-self: flex-start;
+}
+
+/* ================================
+   OTHER TABS
+================================ */
+
+.settings-placeholder-card {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #1a1730;
+  color: #85809c;
+}
+
+.settings-placeholder-card p {
+  margin: 0;
+}
+
+/* ================================
+   TOAST
+================================ */
+
+.settings-toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 5000;
+  padding: 13px 20px;
+  border-radius: 12px;
+  background: #211d39;
+  border: 1px solid #3a3457;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* ================================
+   LIGHT MODE
+================================ */
+
+.settings-page.light-theme {
+  background: #f5f3fb;
+  color: #211d32;
+}
+
+.settings-page.light-theme
+  .settings-search,
+.settings-page.light-theme
+  .settings-card,
+.settings-page.light-theme
+  .settings-personal-card,
+.settings-page.light-theme
+  .settings-placeholder-card {
+  background: #ffffff;
+}
+
+.settings-page.light-theme
+  .settings-search {
+  border: 1px solid #ded9e9;
+}
+
+.settings-page.light-theme
+  .settings-search input {
+  color: #211d32;
+}
+
+.settings-page.light-theme
+  .settings-page-heading h1,
+.settings-page.light-theme
+  .settings-card h2,
+.settings-page.light-theme
+  .settings-content > h2 {
+  color: #211d32;
+}
+
+.settings-page.light-theme
+  .settings-card input,
+.settings-page.light-theme
+  .settings-form-group input {
+  background: #f7f6fa;
+  color: #211d32;
+  border-color: #ddd8e7;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .settings-profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .settings-page {
+    padding: 80px 15px 30px;
+  }
+
+  .settings-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .settings-search {
+    width: 100%;
+  }
+
+  .settings-header-actions {
+    justify-content: flex-end;
+  }
+
+  .settings-page-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .settings-personal-card {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-personal-card .settings-save-button {
+    grid-column: auto;
+  }
+
+  .settings-tabs {
+    scrollbar-width: none;
+  }
+
+  .settings-tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
